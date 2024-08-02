@@ -1,0 +1,38 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border border-box;
+  overflow: hidden;
+}
+
+body{
+  background-color: grey;
+  display:flex;
+  justify-content: center;
+  
+}
+.content {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100vw;
+  height:70vh;
+}
+.content .head{
+  font-size: 40px;
+  font-style: italic;
+}
+
+/* body {
+  animation: fadeInAnimation ease 7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+} */
