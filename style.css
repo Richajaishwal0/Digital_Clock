@@ -9,30 +9,46 @@ body{
   background-color: grey;
   display:flex;
   justify-content: center;
-  
+
 }
 .content {
   display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width:100vw;
   height:70vh;
+ padding:40px;
 }
-.content .head{
-  font-size: 40px;
-  font-style: italic;
+.typewriter h1 {
+  color:aliceblue;
+  overflow: hidden; 
+  border-right: .15em solid rgb(158, 211, 199); 
+  white-space: nowrap; 
+  margin: 0 auto;
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    padding-bottom: 40px;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(158, 211, 199);  }
 }
 
-/* body {
-  animation: fadeInAnimation ease 7s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+#clock{
+  width:600px;
+  border: 2px solid white;
+  height:15vh;
+border-radius: 3px;
+color:rgb(170, 222, 73);
+font-size: 100px;
+display: flex;
+padding:14px;
+
 }
-@keyframes fadeInAnimation {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
-} */
